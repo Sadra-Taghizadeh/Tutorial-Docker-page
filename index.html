@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="page-header">
+        <section class="container">
+            <h1 class="page-header__title text-center ">مخزن ایمیج‌های داکر
+</h1>
+            <h2 class="page-header__title-en">ریپازیتوری کاملی از ایمیج‌های عمومی داکر
+</h2>
+        </section>
+    </section>
+
+    <section class="dev dev--white">
+        <div class="container">
+            <h2 class="dev__title">
+                میرور مخزن ایمیج‌های داکر بر بستر ابر
+            </h2>
+            <div class="dev__subtitle">
+                داکر یک پلتفرم برای طراحی، توسعه و اجرای اپلیکیشن‌ها در محیطی ایزوله و جدا از هم است. با استفاده از
+                ایمیج‌های مخزن داکر می‌توانید در کوتاه‌ترین زمان، سرویس مورد نظرتان را راه‌اندازی کنید.
+                <br><br>
+                اگر با داکر آشنایی دارید و از آن استفاده می‌کنید، به‌کمک مخزن ایمیج‌ داکر ابر آروان، بدون محدودیت ایمیج‌های
+                مورد نیازتان را دریافت و در کسری از ثانیه اپلیکیشن خود را روی
+                 زیرساخت ابری آروان یا هر زیرساخت ابری دیگری
+                اجرا کنید.
+            </div>
+        </div>
+    </section>
+
+
+    <section class="dev">
+        <div class="container">
+            <h2 class="dev__title dev__title--center">
+                مخزن به‌روز و کامل ایمیج‌های داکر ابر آروان
+            </h2>
+            <div class="dev__subtitle dev__subtitle--center">
+                برای جایگزین کردن مخزن ایمیج داکر ابر آروان با مخزن رسمی داکر، مراحل زیر را طی کنید.
+            </div>
+            <div class="dev__tab-container dev__wrapper-box">
+                <div class="dev__boxs">
+                    <div class="dev__box-item">
+                        <div class="dev__box-text">
+                            ابتدا با استفاده از دستور زیر مخزن ابر آروان را به سرویس داکر خود اضافه کنید:
+                        </div>
+                        <div class="dev__clipboard-box-wrap">
+                            <div class="dev__clipboard-box">
+                                <div class="dev__clipborad-box-code">
+                                    sudo bash -c 'cat &gt; /etc/docker/daemon.json &lt;&lt;EOF<br>
+                                    {<br>
+                                    &nbsp; "insecure-registries" : ["https://docker.arvancloud.ir"],<br>
+                                    &nbsp; "registry-mirrors": ["https://docker.arvancloud.ir"]<br>
+                                    }<br>
+                                    EOF'
+                                </div>
+                                <div class="dev__clipborad-box-copy">
+                                    <div class="dev__clipborad-box-notice-copy">Copy URL</div>
+                                    <div class="dev__clipborad-box-notice-copied">Copied !</div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9Z"
+                                            stroke="#566E88" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                                            stroke="#566E88" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev__box-item">
+                        <div class="dev__box-text">
+                            سپس برای اعمال این تغییرات، دستورهای زیر را وارد کنید:
+                        </div>
+                        <div class="dev__clipboard-box-wrap">
+                            <div class="dev__clipboard-box">
+                                <div class="dev__clipborad-box-code">
+                                    docker logout <br>sudo systemctl restart docker
+                                </div>
+                                <div class="dev__clipborad-box-copy">
+                                    <div class="dev__clipborad-box-notice-copy">Copy URL</div>
+                                    <div class="dev__clipborad-box-notice-copied">Copied !</div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9Z"
+                                            stroke="#566E88" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                                            stroke="#566E88" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev__box-item">
+                        <div class="dev__box-text">
+                            حالا می‌توانید بدون تغییر نام و با استفاده از دستور زیر به ایمیج‌های داکر دسترسی داشته باشید:
+                        </div>
+                        <div class="dev__clipboard-box-wrap">
+                            <div class="dev__clipboard-box">
+                                <div class="dev__clipborad-box-code">
+                                    docker pull &lt;ImageName&gt;
+                                </div>
+                                <div class="dev__clipborad-box-copy">
+                                    <div class="dev__clipborad-box-notice-copy">Copy URL</div>
+                                    <div class="dev__clipborad-box-notice-copied">Copied !</div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9Z"
+                                            stroke="#566E88" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path
+                                            d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                                            stroke="#566E88" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dev__box-item">
+                        <div class="dev__box-text">
+                            برای استفاده از مخزن ابر آروان بدون اعمال تغییر در سرویس داکر خود، می‌توانید از دستور زیر
+                            استفاده کنید:
+                        </div>
+                        <div class="dev__clipboard-box-wrap">
+                            <div class="dev__clipboard-box">
+                                <div class="dev__clipborad-box-code">
+                                    docker pull &lt;ImageName&gt;
+                                </div>
+                                <div class="dev__clipborad-box-copy">
+                                    <div class="dev__clipborad-box-notice" id="notice-1">Copy URL</div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        onclick="copyToClipboard('docker pull &lt;ImageName&gt;', 'notice-1')">
+                                        <path
+                                            d="M20 9H11C9.89543 9 9 9.89543 9 11V20C9 21.1046 9.89543 22 11 22H20C21.1046 22 22 21.1046 22 20V11C22 9.89543 21.1046 9 20 9Z"
+                                            stroke="#566E88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path
+                                            d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5"
+                                            stroke="#566E88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
